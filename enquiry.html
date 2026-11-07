@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enquiry — Ocean and Land Support (OLS), Monaco</title><meta name="description" content="Start an enquiry with Ocean and Land Support: three short steps — what needs managing, the disciplines you need, and your details.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="nav"><a class="brand" href="index.html">Ocean and Land Support<small>Monaco · Yacht · Home · Concierge</small></a><button class="menu-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">☰</button><nav class="main" id="main-nav" aria-label="Primary"><a href="index.html">Home</a><a href="yacht-management.html">Yacht Management</a><a href="home-management.html">Home Management</a><a href="concierge.html">Concierge</a><a href="packages.html">Packages</a><a href="about.html">About</a><a class="btn small" href="enquiry.html">Start an enquiry</a></nav></div></header><main id="main"><section class="hero"><div class="wrap"><p class="eyebrow">Enquiry</p><h1>Start an <em>enquiry.</em></h1><p class="lede">Three short steps. Tell us what needs managing, pick what you need, and leave your details — Vanessa or Sarah will be in touch.</p><p style="color:var(--muted-ink)">25 years of collective experience · Monaco · 24/7 worldwide support</p></div></section>
+<section class="tight"><div class="wrap">
+<div id="wizard-form-view"><form class="wizard" id="enquiry-wizard" novalidate>
+<p class="progress" id="wizard-progress">Step 1 of 3</p><div class="bar" role="presentation"><i id="wizard-bar" style="width:33%"></i></div>
+<div class="wizard-step" data-step="0"><h2 style="font-size:28px">What needs managing?</h2><div class="choice-grid">
+<button type="button" class="choice" data-group="need" data-value="Yacht" aria-pressed="false">Yacht<small>Full yacht management</small></button>
+<button type="button" class="choice" data-group="need" data-value="Home" aria-pressed="false">Home<small>Private home management</small></button>
+<button type="button" class="choice" data-group="need" data-value="Both" aria-pressed="false">Both<small>Yacht and home</small></button>
+<button type="button" class="choice" data-group="need" data-value="Concierge" aria-pressed="false">Concierge<small>For clientele and charters</small></button>
+</div><div class="wizard-nav"><span></span><button type="button" class="btn" data-next>Continue →</button></div></div>
+<div class="wizard-step" data-step="1" hidden><h2 style="font-size:28px">Pick the disciplines you need</h2><p>Choose as many as apply. Not sure yet is a fine answer.</p><div class="choice-grid">
+<button type="button" class="choice" data-group="discipline" data-value="Operations" aria-pressed="false">Operations</button>
+<button type="button" class="choice" data-group="discipline" data-value="Technical" aria-pressed="false">Technical</button>
+<button type="button" class="choice" data-group="discipline" data-value="Crew" aria-pressed="false">Crew</button>
+<button type="button" class="choice" data-group="discipline" data-value="Finance" aria-pressed="false">Finance</button>
+<button type="button" class="choice" data-group="discipline" data-value="Safety" aria-pressed="false">Safety</button>
+<button type="button" class="choice" data-group="discipline" data-value="Housekeeping" aria-pressed="false">Housekeeping</button>
+<button type="button" class="choice" data-group="discipline" data-value="Security" aria-pressed="false">Security</button>
+<button type="button" class="choice" data-group="discipline" data-value="Itinerary" aria-pressed="false">Itinerary</button>
+<button type="button" class="choice" data-group="discipline" data-value="Not sure yet" aria-pressed="false">Not sure yet</button>
+</div><div class="wizard-nav"><button type="button" class="btn ghost" data-back>← Back</button><button type="button" class="btn" data-next>Continue →</button></div></div>
+<div class="wizard-step" data-step="2" hidden><h2 style="font-size:28px">Your details</h2>
+<dl class="summary"><dt>What needs managing</dt><dd id="sum-need">—</dd><dt>Disciplines</dt><dd id="sum-disciplines">—</dd><dt>Package</dt><dd id="sum-package">To discuss</dd></dl>
+<div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="error">Please enter your name.</p></div>
+<div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="error">Please enter a valid email address.</p></div>
+<div class="field"><label for="f-timeline">Timeline <span style="font-weight:400;color:var(--muted-ink)">(optional)</span></label><select id="f-timeline" name="timeline"><option value="">Not specified</option><option>As soon as possible</option><option>Within a month</option><option>Within three months</option><option>Just exploring</option></select><p class="hint">When would you like the service to start?</p></div>
+<label class="consent"><input type="checkbox" id="f-consent" required> <span>I agree that Ocean and Land Support may use the details I provide to reply to this enquiry, and to nothing else. See the <a href="privacy.html">Privacy Policy</a>.</span></label>
+<div class="wizard-nav"><button type="button" class="btn ghost" data-back>← Back</button><button type="submit" class="btn">Send enquiry</button></div></div>
+</form></div>
+<div class="wizard confirmation" id="wizard-confirmation" hidden><div class="tick" aria-hidden="true">✓</div><h2>Thank you.</h2><p>Your enquiry has been received. Vanessa or Sarah will be in touch.</p>
+<dl class="summary"><dt>Name</dt><dd id="sum-name">—</dd><dt>Email</dt><dd id="sum-email">—</dd><dt>What needs managing</dt><dd id="sum-need2">—</dd><dt>Timeline</dt><dd id="sum-timeline">Not specified</dd></dl>
+<p><a class="btn" id="wa-continue" href="enquiry.html#whatsapp">Continue on WhatsApp</a> <a class="btn ghost" href="index.html">Back to home</a></p>
+<p style="font-size:14px;color:var(--muted-ink)">WhatsApp number to confirm with the firm before publishing. You can also write to <a href="mailto:info@oceanlandsupport.com">info@oceanlandsupport.com</a> or call <a href="tel:+33643911447">+33 643 911 447</a>.</p></div>
+<div id="whatsapp" style="margin-top:36px;max-width:820px"><h2 style="font-size:28px">Prefer WhatsApp?</h2><p>WhatsApp is the fast route — but the firm&rsquo;s WhatsApp number is still to be confirmed. Until then, please use the enquiry form above, email <a href="mailto:info@oceanlandsupport.com">info@oceanlandsupport.com</a>, or call <a href="tel:+33643911447">+33 643 911 447</a>.</p></div>
+<div style="margin-top:28px;max-width:820px"><h2 style="font-size:28px">What happens next</h2><ol><li>Vanessa or Sarah reads your enquiry.</li><li>You meet the founders and agree the scope — in writing — before anything starts.</li><li>We manage; you enjoy.</li></ol><p style="font-size:14px;color:var(--muted-ink)">No set price is published. Cost depends on the size of your vessel or home, the scope, and the length of the agreement.</p></div>
+</div></section></main><footer class="site"><div class="wrap"><div class="foot-grid">
+<div><h3>Ocean and Land Support</h3><p style="color:#D8E0D5">Boutique yacht management, private home management and concierge — from Monaco, worldwide, 24/7.</p><p style="color:#D8E0D5"><a href="mailto:info@oceanlandsupport.com">info@oceanlandsupport.com</a><br><a href="tel:+33643911447">+33 643 911 447</a><br>Le Ruscino, Monaco 98000</p></div>
+<div><p class="label">Services</p><ul><li><a href="yacht-management.html">Yacht Management</a></li><li><a href="home-management.html">Home Management</a></li><li><a href="concierge.html">Concierge</a></li><li><a href="packages.html">Packages & Process</a></li><li><a href="client-portal.html">Client Portal</a></li></ul></div>
+<div><p class="label">Company</p><ul><li><a href="about.html">About — Founders</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li><li><a href="client-portal.html">Client Portal</a></li></ul></div>
+<div><p class="label">Legal</p><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms & Conditions</a></li><li><a href="cookies.html">Cookie Policy</a></li></ul></div>
+</div><div class="foot-base"><span>© 2026 Ocean and Land Support (OLS). All rights reserved.</span><span>Le Ruscino, Monaco 98000</span></div></div></footer>
+<a class="wa-float" href="enquiry.html#whatsapp">Chat on WhatsApp<small>WhatsApp — number to confirm</small></a>
+<div class="cookie" id="cookie-banner" role="dialog" aria-label="Cookie consent"><p><strong>We use cookies.</strong> Essential cookies keep the site and the enquiry wizard working. Analytics cookies are used only if you accept them. See our <a href="cookies.html">Cookie Policy</a>.</p><div class="row"><button class="btn small" id="cookie-accept" type="button">Accept analytics</button><button class="btn ghost small" id="cookie-decline" type="button">Essential only</button></div></div>
+<script src="assets/js/main.js"></script></body></html>
